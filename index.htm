@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixue — Ice Cream & Tea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Rombakcss.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">❄</span>
+      <span class="logo-text">MIXUE</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#strategi">Strategi</a></li>
+    </ul>
+    <button class="nav-cta">Pesan Sekarang</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mobile-link">Beranda</a></li>
+      <li><a href="#about" class="mobile-link">Tentang</a></li>
+      <li><a href="#menu" class="mobile-link">Menu</a></li>
+      <li><a href="#strategi" class="mobile-link">Strategi</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="img/mixue 1.jpg" alt="Mixue Hero" class="hero-img" onerror="this.style.display='none'">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge reveal-up">Since 1997 · China</span>
+      <h1 class="hero-title reveal-up">
+        Rasa yang<br><em>Tak Terlupakan</em>
+      </h1>
+      <p class="hero-sub reveal-up">Es krim & teh susu premium dengan harga yang bersahabat,<br>kini hadir di seluruh Indonesia.</p>
+      <div class="hero-btns reveal-up">
+        <a href="#menu" class="btn-primary">Lihat Menu</a>
+        <a href="#about" class="btn-ghost">Pelajari Lebih</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text reveal-left">
+        <span class="section-label">Tentang Mixue</span>
+        <h2 class="section-title">Lebih dari Sekedar<br><em>Es Krim Biasa</em></h2>
+        <p>Mixue hadir sejak tahun 1997 dari Tiongkok dan sejak pertengahan 2021 mulai merambah Indonesia dengan strategi pemasaran yang agresif dan lokasi gerai yang strategis. Kini Mixue mudah ditemukan di seluruh wilayah Indonesia, menghadirkan cita rasa premium dengan harga yang sangat terjangkau.</p>
+      </div>
+      <div class="stats-grid reveal-right">
+        <div class="stat-card">
+          <span class="stat-num" data-target="600">0</span>
+          <span class="stat-unit">+</span>
+          <p>Gerai di Indonesia</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="40">0</span>
+          <span class="stat-unit">+</span>
+          <p>Pilihan Rasa</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="27">0</span>
+          <span class="stat-unit">th</span>
+          <p>Pengalaman</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-unit"></span>
+          <p>Jenis Minuman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU BARU -->
+  <section class="menu" id="menu">
+    <div class="menu-header">
+      <span class="section-label reveal-up">Menu Terbaru</span>
+      <h2 class="section-title reveal-up">Inovasi Rasa <em>Terkini</em></h2>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal-up" style="--delay: 0.1s">
+        <div class="card-img-wrap">
+          <img src="img/mixue4.jpg" alt="Berrybean Sundae" onerror="this.parentElement.classList.add('img-fallback','fb1')">
+          <div class="card-tag">New</div>
+        </div>
+        <div class="card-body">
+          <h3>Berrybean Sundae</h3>
+          <p>Es Krim</p>
+          <span class="card-price">Mulai Rp 8.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal-up" style="--delay: 0.2s">
+        <div class="card-img-wrap">
+          <img src="img/mixue5.webp" alt="Red Bean Milk Tea" onerror="this.parentElement.classList.add('img-fallback','fb2')">
+          <div class="card-tag">Hot</div>
+        </div>
+        <div class="card-body">
+          <h3>Red Bean Milk Tea</h3>
+          <p>Milk Tea</p>
+          <span class="card-price">Mulai Rp 10.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal-up" style="--delay: 0.3s">
+        <div class="card-img-wrap">
+          <img src="img/mixue6.jpeg" alt="Grape Fruit Aroma" onerror="this.parentElement.classList.add('img-fallback','fb3')">
+          <div class="card-tag">Fresh</div>
+        </div>
+        <div class="card-body">
+          <h3>Grape Fruit Aroma</h3>
+          <p>Fruit Tea</p>
+          <span class="card-price">Mulai Rp 9.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal-up" style="--delay: 0.4s">
+        <div class="card-img-wrap">
+          <img src="img/mixue2.jpg" alt="Strawberry Ice Cream" onerror="this.parentElement.classList.add('img-fallback','fb4')">
+          <div class="card-tag">Fav</div>
+        </div>
+        <div class="card-body">
+          <h3>Strawberry Ice Cream</h3>
+          <p>Es Krim</p>
+          <span class="card-price">Mulai Rp 7.000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGI / FEATURE -->
+  <section class="strategi" id="strategi">
+    <div class="strategi-inner">
+      <div class="strategi-img reveal-left">
+        <img src="img/mixue8.jpeg" alt="Mixue Store" onerror="this.parentElement.classList.add('img-fallback','fb5')">
+        <div class="img-deco"></div>
+      </div>
+      <div class="strategi-content reveal-right">
+        <span class="section-label">Keunggulan Mixue</span>
+        <h2 class="section-title">Kenapa Harus<br><em>Mixue?</em></h2>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-icon">🎨</div>
+            <div>
+              <h4>Produk Inovatif</h4>
+              <p>Berbagai varian rasa menarik dengan kualitas tinggi dan kemasan yang eye-catching.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <div>
+              <h4>Harga Terjangkau</h4>
+              <p>Harga kompetitif dengan diskon dan promosi menarik setiap harinya.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📍</div>
+            <div>
+              <h4>Lokasi Strategis</h4>
+              <p>Ratusan gerai tersebar di lokasi-lokasi strategis di seluruh Indonesia.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎁</div>
+            <div>
+              <h4>Program Loyalitas</h4>
+              <p>Ikuti program reward kami dan dapatkan keuntungan eksklusif setiap pembelian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal-up">
+    <div class="cta-content">
+      <img src="img/mixue9.png" alt="Mixue Mascot" class="cta-mascot" onerror="this.style.display='none'">
+      <div class="cta-text">
+        <h2>Temukan Gerai Mixue<br>Terdekat di Kotamu!</h2>
+        <p>Kunjungi situs resmi Mixue untuk informasi lengkap dan promo terkini.</p>
+        <a href="https://www.mixue.id" target="_blank" class="btn-primary">Kunjungi Website Resmi →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">❄</span>
+        <span class="logo-text">MIXUE</span>
+        <p>Ice Cream & Tea · Since 1997</p>
+      </div>
+      <p class="footer-copy">© 2025 Mixue Indonesia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="beranda.js"></script>
+  <script>
+    // NAVBAR SCROLL
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // HAMBURGER MENU
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+
+    // COUNTER ANIMATION
+    function animateCounter(el) {
+      const target = +el.getAttribute('data-target');
+      const duration = 1800;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current);
+      }, 16);
+    }
+    const statObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.stat-num').forEach(animateCounter);
+          statObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    const statsGrid = document.querySelector('.stats-grid');
+    if (statsGrid) statObs.observe(statsGrid);
+  </script>
+  <script src="Rombakjs.js"></script>
+</body>
+</html>
